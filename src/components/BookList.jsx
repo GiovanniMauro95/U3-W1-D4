@@ -29,7 +29,7 @@ class BookList extends Component {
             )
             .map((b) => (
               <Col xs={12} md={4} key={b.asin}>
-                <SingleBook book={b} />
+                <SingleBook book={b} key={b.asin} />
               </Col>
             ))}
         </Row>
